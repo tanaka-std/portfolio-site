@@ -1,0 +1,580 @@
+/* ---------------------*/
+/* base
+/* ---------------------*/
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 2.5rem;
+  letter-spacing: .05em;
+  font-family: "Noto Serif",  serif;
+}
+
+img {
+  width: 100%;
+  height: 100vh;
+  vertical-align: bottom;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.subject {
+  font-size: 7rem;
+  font-style: italic;
+  padding-top: 80px;
+}
+
+.subject-left {
+  color: black;
+}
+
+.subject-left::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 180px;
+  height: 3px;
+  background-color: #000000;
+  margin-left: 35px;
+}
+
+.subject-right {
+  color: white;
+  text-align: right;
+}
+
+.subject-right::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 180px;
+  height: 3px;
+  background-color: #ffffff;
+  margin-left: 35px;
+  margin-right: 8.75%;
+}
+
+/*--------------------*/
+/* ヘッダー部分 */
+/*--------------------*/
+header {
+  width: 100vw;
+  height: 80px;
+  background-color: white;
+  opacity: 0.8;
+  position: fixed;
+  padding-left: 15%;
+  padding-right: 8.75%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  animation-name: fade-in;
+  animation-duration: 7s;
+  animation-timing-function: ease;
+}
+
+
+.site-title {
+  font-size: 3.2rem;
+  line-height: 35px;
+  font-style: italic;
+  position: relative;
+  display: inline-block;
+  transition: .2s all;
+}
+
+.site-title:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.site-title::before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+  top: 18px;
+  left: -60px;
+}
+
+.site-title::after {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 3px;
+  background-color: #000000;
+  position: absolute;
+  top: 55px;
+  left: 180px;
+  vertical-align: 10px;
+}
+
+
+
+.nav-items {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-items li {
+  font-style: italic;
+  font-size: 2.5rem;
+  margin-right: 40px;
+  margin-top: 10px;
+  transition: .2s all;
+}
+
+.nav-items li:last-of-type {
+  margin-right: 0;
+}
+
+.nav-items li span {
+  display: block;
+  font-size: 1.4rem;
+  margin-left: 12px;
+  font-style: normal;
+}
+
+.nav-items li span:last-of-type {
+  margin-left: 1rem;
+}
+
+.nav-items li:hover {
+  transform: scale(1.2, 1.2);
+}
+
+
+/*---------------------*/
+/* fV部分 */
+/*---------------------*/
+.fv img {
+  background-image: url(img/fv-pic.jpg);
+  object-fit: cover;
+  animation-name: fade-in;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+}
+
+.site-concept {
+  width: 100vw;
+  height: 250px;
+  background-color: white;
+  opacity: 0.7;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+
+.site-concept-en-wrapper h1 {
+  font-size: 8rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.site-concept-en::after {
+  content: "|";
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  50% {opacity: 0;}
+}
+
+
+.site-concept-ja-wrapper {
+  text-align: center;
+  margin-top: 15px;
+  animation-name: fade-in2;
+  animation-duration: 4.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in2 {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  80% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.site-concept-ja {
+  font-size: 4rem;
+  display: inline;
+  position: relative;
+}
+
+.site-concept-ja::before {
+  content: "";
+  width: calc(50vw - 355.515px);
+  height: 3px;
+  background-color: #000000;
+  position: absolute;
+  top: 88px;
+  left: 109%;
+}
+
+.site-concept-ja::after {
+  content: "";
+  width: calc(50vw - 185.625px);
+  height: 3px;
+  background-color: #000000;
+  top: 25px;
+  right: 109%;
+  position: absolute;
+}
+
+.scroll-btn {
+  position: absolute;
+  left: 50%;
+  bottom: 100px;
+  transform: translateX(-50%);
+  animation-name: fade-in;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+}
+
+.scroll-btn span  {
+  position: absolute;
+  left: 30%;
+  width: 30px;
+  height: 50px;
+  bottom: 35px;
+  border: 3px solid #000;
+  border-radius: 50px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.scroll-btn span::before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: #000000;
+  transform: translateX(-50%);
+  border-radius: 100%;
+  box-sizing: border-box;
+  animation: scroll 2s infinite;
+  margin-left: -3px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+
+}
+
+/*----------------*/
+/* プロフィール部分 */
+/*-----------------*/
+.profile {
+  margin: 0px 15% 150px 15%;
+}
+
+.profile-outline {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  background-color: #000000;
+  border: 3px solid black;
+}
+
+.profile ul {
+  margin-left: 150px;
+  margin-top: 60px;
+}
+
+.icon {
+  color: #006DFB;
+}
+
+.profile-message {
+  margin-top: 70px;
+  margin-left: 100px;
+  line-height: 45px;
+}
+
+.profile-link {
+  color: blue;
+}
+
+.grad-trigger {
+  display: none;
+}
+
+.grad-btn {
+  display: none;
+}
+
+
+/*--------------------*/
+/* サービス部分 */
+/*--------------------*/
+.service {
+  background-image: url(../img/service-back-img.png);
+  background-size: cover;
+  position: relative;
+}
+
+.service-items-wrapper {
+  display: flex;
+  margin-right: 8.75%;
+  margin-left: 8.75%;
+  height: 660px;
+  align-items: center;
+}
+
+
+.service-items img {
+  width: 115px;
+  height: 115px;
+  margin-top: 10px;
+}
+
+
+.service-items p {
+  width: 95%;
+  font-size: 2rem;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.service-items {
+  background-color: #ffffff;
+  opacity: 0.6;
+  margin-right: 15px;
+  margin-left: 15px;
+  height: 420px;
+  border-radius: 30px;
+  width: 33.33%;
+  text-align: center;
+}
+
+.service-items h2 {
+  font-size: 4rem;
+  margin-top: 20px;
+}
+
+
+/*-------------------*/
+/* ワークス部分 */
+/*-------------------*/
+.img-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.img-box img{
+  object-fit: contain;
+  height: 400px;
+  margin-top: 30px;
+}
+
+.works {
+  margin-left: 8.75%;
+  margin-right: 8.75%;
+  margin-bottom: 150px;
+}
+
+.works p {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.img-box-item1,
+.img-box-item2 {
+  position: relative;
+}
+
+.img-mask {
+  position: absolute;
+  top: 53%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  height: 89%;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+.img-mask a {
+  color: white;
+  border: solid 1px #08FDD8;
+  border-radius: 50px;
+  font-size: 3rem;
+  display: block;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.img-mask:hover {
+  opacity: 1;
+}
+
+.mask-flex {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.detail-btn {
+  display: none;
+}
+
+/*-----------------*/
+/* コンタクト部分 */
+/*-----------------*/
+.contact {
+  background-image: url(../img/contact-pic.png);
+  background-size: cover;
+  color: white;
+}
+
+.contact > p {
+  text-align: center;
+  margin-top: 45px;
+}
+
+.required {
+  background-color: red;
+  color: white;
+  margin-left: 10px;
+}
+
+
+form {
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 35px;
+  padding-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+textarea {
+  width: 100%;
+}
+
+.btn {
+  border-radius: 45px;
+  width: 235px;
+  font-style: italic;
+  font-size: 3rem;
+  background-color: lavender;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  line-height: 60px;
+  font-family: "Noto Serif";
+}
+
+
+/*---------------------*/
+/* フッター部分 */
+/*---------------------*/
+footer {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+footer p {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.top-btn {
+  width: 80px;
+  height: 80px;
+  display: none;
+  position: fixed;
+  right: 1.75%;
+  bottom: 25px;
+  background-color: white;
+  border-radius: 35%;
+}
+
+.top-btn:hover {
+  background-color: lavender;
+}
+
+.footer-icon {
+  display: block;
+  width: 100%;
+  text-align: center;
+}

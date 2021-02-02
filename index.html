@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Web制作フリーランスである「たなか」の自己紹介サイトです">
+  <meta name="keywords" content="ホームページ作成,フリーランス,Web制作,レスポンシブ,WordPress">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>たなかのポートフォリオサイト</title>
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+  <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+
+<body>
+<!----------------------->
+<!-- ヘッダー、メニュー部分 -->
+<!----------------------->
+  <header class="top">
+    <div class="nav-wrapper">
+      <h1 class="site-title"><a href="#top">Tanaka's　<br class="br-sp">Portfolio</a></h1>
+      <nav class="site-menu">
+        <div class="nav-items-wrapper">
+
+          <ul class="nav-items">
+            <li class="nav-item">
+              <a href="#profile">Profile
+                <span>自己紹介</span>
+              </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#service">Service
+              <span>サービス</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#works">Works
+              <span>作品紹介</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#contact">Contact
+              <span>お問い合わせ</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      </nav>
+    </div>
+
+
+    <div class="hamburger-btn">
+      <span class="top-line"></span>
+      <span class="middle-line"></span>
+      <span class="bottom-line"></span>
+    </div>
+  </header>
+
+
+<!------------------->
+  <!-- メイン部分 -->
+<!-------------------->
+  <main>
+
+<!------------------->
+ <!-- FV部分 -->
+  <!----------------->
+    <section class="fv">
+      <img src="img/fv-pic.jpg" alt="ファーストビュー画像">
+      <div class="site-concept">
+        <div class="site-concept-en-wrapper">
+          <h1><span class="site-concept-en"></span></h1>
+        </div>
+
+        <div class="site-concept-ja-wrapper">
+          <h2 class="site-concept-ja">『あなた』とともに<br>『あなた』のためのWebサイトを</h2>
+        </div>
+      </div>
+      <a href="#profile" class="scroll-btn"><span></span>Scroll</a>
+    </section>
+
+
+
+
+<!------------------->
+  <!-- プロフィール部分 -->
+<!------------------->
+    <section class="profile">
+      <h1 class="subject subject-left" id="profile">Profile</h1>
+      <div class="profile-outline">
+        <div class="profile-img-wrapper">
+          <img src="img/profile.JPG" alt="自己紹介画像" class="profile-pic">
+        </div>
+
+        <ul>
+          <li>名前：たなか</li>
+          <li>年齢：２２歳</li>
+          <li>出身：岡山県</li>
+          <li>大学：京都大学</li>
+          <li>趣味：スポーツ、資格勉強</li>
+          <li><a href="https://twitter.com/tanaka_std" class="icon">Twitter<i class="fab fa-twitter fa-1x my-skyblue fa-fw"></i></a>：@tanaka_std</li>
+
+        </ul>
+      </div>
+      <div class="grad-wrap">
+        <input type="checkbox" id="trigger1" class="grad-trigger">
+        <label for="trigger1" class="grad-btn">続きを読む</label>
+        <div class="profile-message grad-item">
+          <p>
+            5歳で初めてパソコンに触れました。<br>「大好きを仕事にしたい。」その一心で、web制作を独学で学んでおります。<br>
+            「お客様第一」をモットーに、細かなヒアリングと迅速なレスポンスを行ってまいります。<br>お客様が「理想とするWebサイト」をお客様と「二人三脚」で必ず実現いたします。<br>お気軽に下記<a href="#contact" class="profile-link">Contactフォーム</a>、<a href="https://twitter.com/tanaka_std" class="profile-link">TwitterのDM</a>よりお問い合わせください。
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+
+<!------------------>
+    <!-- サービス部分 -->
+<!------------------->
+    <section class="service">
+      <h1 class="subject subject-right" id="service">Service</h1>
+      <div class="service-items-wrapper slider">
+        <div class="service-item1 service-items">
+          <h2>コーディング</h2>
+          <div class="service-item1-pic">
+            <img src="img/service-1.jpg" alt="サービス部分の画像">
+          </div>
+          <p>お客様から頂いたデザインを元に、忠実なコーディングをいたします。<br>また、SEO対策（検索エンジン最適化）のような付加価値を提供いたします。</p>
+        </div>
+        <div class="service-item2 service-items">
+          <h2>Word Press</h2>
+          <div class="service-item2-pic">
+            <img src="img/service-2.jpg" alt="WordPress部分の画像">
+          </div>
+          <p>お知らせ等、サイトの更新を頻繁になさる方におすすめいたします。<br>Word Pressの導入により、ご自身でのサイト更新が容易になります。</p>
+        </div>
+        <div class="service-item3 service-items">
+          <h2>レスポンシブ</h2>
+          <div class="service-item3-pic">
+            <img src="img/service-3.jpg" alt="レスポンシブ部分の画像">
+          </div>
+          <p>PC画面だけでなく、スマートフォンやタブレットサイズにも対応したコーディングをいたします。<br>既存サイトの改修ご依頼も受け付けております。</p>
+        </div>
+      </div>
+    </section>
+
+
+
+<!---------->
+    <!-- ワークス部分 -->
+<!----------->
+    <section class="works">
+      <h1 class="subject subject-left" id="works">Works</h1>
+      <div class="image-wrapper1">
+        <p>架空コーポレートサイト　デザインカンプからコーディング</p>
+        <div class="img-box slider">
+          <div class="img-box-item1">
+            <img src="img/works-pic-1.png" alt="模写サイト１">
+            <div class="img-mask">
+              <div class="mask-flex">
+                <a href="file:///Users/masato/Desktop/%E6%A8%A1%E5%86%99%E7%B3%BB/kurikan-2/index.html">
+                  詳細を見る</a>
+              </div>
+            </div>
+            <button type="button" onclick="location.href='file:///Users/masato/Desktop/%E6%A8%A1%E5%86%99%E7%B3%BB/kurikan-2/index.html'" class="detail-btn">詳細を見る</button>
+
+          </div>
+
+          <div class="img-box-item2">
+            <img src="img/works-pic-2.png" alt="模写サイト２">
+            <div class="img-mask">
+              <div class="mask-flex">
+                <a href="file:///Users/masato/Desktop/%E6%A8%A1%E5%86%99%E7%B3%BB/kurikan-1/index.html">詳細を見る</a>
+              </div>
+            </div>
+            <button type="button" onclick="location.href='file:///Users/masato/Desktop/%E6%A8%A1%E5%86%99%E7%B3%BB/kurikan-1/index.html'" class="detail-btn">詳細を見る</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+<!------------>
+    <!-- コンタクト部分 -->
+<!------------>
+    <section class="contact">
+      <h1 class="subject subject-right" id="contact">Contact</h1>
+      <p>お仕事のご依頼・ご相談など、お気軽にお問い合わせください。<br>下記フォームより分かる範囲でご記入ください。<br>翌営業日までにご連絡差し上げます。</p>
+      <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfdKYBZ0J6XihYh5AbTHIdIZjERCGTvCsoLqe7EXZFdsjbdTA/formResponse">
+        <div class="name-box">
+          <label for="entry.1045781291">お名前<span class="required">必須</span></label>
+          <input type="text" name="entry.1045781291" id="entry.1045781291" placeholder="例）田中　太郎" required="true">
+        </div>
+
+        <div class="mail-box">
+          <label for="entry.1166974658">メールアドレス<span class="required">必須</span></label>
+          <input type="email" name="entry.1166974658" id="entry.1166974658" placeholder="例）abcdef@hijk.lmn" required="true">
+        </div>
+
+        <div class="tel-box">
+          <label for="entry.2005620554entry">電話番号</label>
+          <input type="text" name="entry.2005620554" id="entry.2005620554" placeholder="例）080-1234-5678" required="true">
+        </div>
+
+        <div class="content-box">
+          <label for="entry.839337160">お問い合わせ内容<span class="required">必須</span></label>
+          <textarea name="entry.839337160" id="entry.839337160" cols="30" rows="10"></textarea>
+        </div>
+
+        <button type="button" name="submit" class="btn">Submit</button>
+      </form>
+    </section>
+  </main>
+
+
+  <!-- フッター部分 -->
+  <footer>
+    <a href="https://twitter.com/tanaka_std" class="icon footer-icon"><i class="fab fa-twitter fa-2x my-skyblue fa-fw"></i></a>
+    <p>©tanaka.2021 All Rights Reserved.</p>
+    <a href="#top"><img src="img/top-btn.png" alt="topへ戻る" class="top-btn"></a>
+  </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
